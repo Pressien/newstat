@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victim Transcript</title>
+    <link rel="stylesheet" href="talk.css">
+</head>
+<body>
+	
+<video autoplay muted loop id="backgroundVideo">
+  <source src="victim.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+<div class="container">
+    <div class="left-side">
+        <img src="victim.png" alt="Victim's Face" class="victim-image">
+    </div>
+    <div class="right-side">
+      <h2>VICTIM TRANSCRIPT</h2>
+        <p>
+         I need your help. I am not sure how it happened or what they did, but I got invited into a chatroom and I witnessed a video, a video that never happened, and they have been manipulating me with these videos and images. They know my address; they have all my information. They keep asking me to do things I don’t want to do.</p>
+        <p class="response-label">Your response :</p>
+      <div class="response-buttons">
+          <button onclick="positiveResponse()">Thank you for coming forward, it was such a big step.</button>
+            <button onclick="negativeResponse()">You should have been careful about what you share online.</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function positiveResponse() {
+        window.location.href = "positive-response.html";
+    }
+
+    function negativeResponse() {
+        window.location.href = "mission-failed.html";
+    }
+</script>
+
+</body>
+</html>
+
